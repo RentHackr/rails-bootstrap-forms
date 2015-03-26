@@ -153,7 +153,7 @@ module BootstrapForm
       hidden_field(args.first,{value: "", multiple: true}).concat(html)
     end
 
-    alias_method_chain :collection_check_boxes, :bootstrap
+    #alias_method_chain :collection_check_boxes, :bootstrap
 
     def collection_radio_buttons_with_bootstrap(*args)
       inputs_collection(*args) do |name, value, options|
@@ -161,7 +161,7 @@ module BootstrapForm
       end
     end
 
-    alias_method_chain :collection_radio_buttons, :bootstrap
+    #alias_method_chain :collection_radio_buttons, :bootstrap
 
     def check_boxes_collection(*args)
       warn "'BootstrapForm#check_boxes_collection' is deprecated, use 'BootstrapForm#collection_check_boxes' instead"
